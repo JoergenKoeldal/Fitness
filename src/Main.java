@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
+        //Er udarbejdet i samarbejde med Matias Storm
 
         String str = "";
        Member member1 = new Member(true, "Morten", "130195-1303");
