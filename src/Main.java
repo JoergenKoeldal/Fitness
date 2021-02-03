@@ -5,6 +5,10 @@ public class Main {
     public static void main(String[] args) {
         //Er udarbejdet i samarbejde med Matias Storm
 
+        //Vi har ændret lidt i designet, og rykket bestemmelse af membertype i Member Klassen, ud i en setMetode, som bliver kaldt af constructoren
+        //Fordelen ved ikke at have det i getMetoden er, at den type metoder bliver kaldt langt oftere, så hvis programmet skal
+        //Blive stort og stærkt engang kører vi en masse linjer kode igen og igen uden grund
+
         String str = "";
        Member member1 = new Member(true, "Morten", "130195-1303");
         ArrayList<Person> fitnessList = new ArrayList<>();

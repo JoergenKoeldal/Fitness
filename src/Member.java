@@ -7,14 +7,7 @@ public class Member extends Person {
 
     public Member(boolean isBasic, String name, String cpr) {
         super(name, cpr);
-        this.isBasic = isBasic;
-        if (isBasic) {
-            memberType = "Basic";
-            monthlyFee = 199;
-        } else {
-            memberType = "Full";
-            monthlyFee = 299;
-        }
+        setIsBasic(isBasic);
     }
 
     public String getMemberType() {
@@ -24,7 +17,17 @@ public class Member extends Person {
     public int getMonthlyFee() {
         return monthlyFee;
     }
-
+        //Giver mulighed for at ændre medlemsskab hos en member
+    public void setIsBasic(boolean isBasic) {
+        this.isBasic = isBasic;
+        if (isBasic) {
+            memberType = "Basic";
+            monthlyFee = 199;
+        } else {
+            memberType = "Full";
+            monthlyFee = 299;
+        }
+    }
 
 
 
